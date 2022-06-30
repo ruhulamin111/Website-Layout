@@ -87,7 +87,7 @@ nav a:hover {
     width: 400px;
     height: 300px;
     position: relative;
-
+    overflow: hidden;
 }
 
 .photo img {
@@ -100,6 +100,7 @@ nav a:hover {
     position: absolute;
     width: 400px;
     top: 0;
+    transition: top 2s ease;
     display: none;
     color: white;
     background-color: rgba(77, 74, 139, 0.7);
@@ -107,4 +108,9 @@ nav a:hover {
 
 .photo-container:hover .content {
     display: block;
+}
+
+.photo-container:hover .photo {
+    transform: scale(1.5);
+    transition: transform 2s ease;
 }
