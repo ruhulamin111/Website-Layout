@@ -44,6 +44,7 @@ nav a:hover {
     margin-left: 20px;
 }
 
+/* calender */
 .calender {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -68,8 +69,42 @@ nav a:hover {
     background-color: rgba(123, 119, 242, 0.6);
 }
 
-.calender-title {
+.title {
     text-align: center;
     color: #7B77F2;
-    margin: 20px 0;
+    margin: 50px 0;
+    font-size: 2em;
+}
+
+/* photo album */
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.photo-container {
+    width: 400px;
+    height: 300px;
+    position: relative;
+
+}
+
+.photo img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    display: none;
+    color: white;
+    background-color: rgba(77, 74, 139, 0.7);
+}
+
+.photo-container:hover .content {
+    display: block;
 }
